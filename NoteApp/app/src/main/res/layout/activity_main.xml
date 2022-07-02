@@ -8,9 +8,18 @@
     android:background="@color/light_gray"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView_home"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        app:queryHint="Search"
+        app:iconifiedByDefault="false"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_home"
         android:layout_margin="8dp"
+        android:layout_below="@+id/searchView_home"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     
